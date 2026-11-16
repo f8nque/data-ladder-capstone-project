@@ -1,0 +1,15 @@
+# Environment variables file
+.env
+
+# Python virtual environments and installed binaries
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+capstone_project.egg-info/
+*__pycache__/
+raw_data/
+.pytest_cache/
+

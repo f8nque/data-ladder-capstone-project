@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capstone_project"
+version = "0.1.0"
+description = "Financial  Apache Airflow"
+readme = "README.md"
+authors = [
+    { name = "Francis Gachau", email = "gachaufrancis22@gmail.com" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3.14",
+]
+requires-python = ">=3.10"
+dependencies = [
+    # Add your project's core dependencies here (e.g., pandas, requests)
+    "pandas>=2.1.0",
+    "sqlalchemy>=2.0",
+    "psycopg2-binary",
+    "pyarrow"
+
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "apache-airflow>=2.8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["capstone*"]
